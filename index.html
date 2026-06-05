@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Honda OBD Data Logger</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Honda OBD Logger</h1>
+      <p>Civic 1.8 i‑VTEC — ELM327 BLE/Web Bluetooth</p>
+    </div>
+    <span id="status">Déconnecté</span>
+  </header>
+
+  <section class="controls">
+    <button id="connectBtn">Connecter OBD‑II</button>
+    <button id="logBtn" disabled>Démarrer log</button>
+    <button id="csvBtn" disabled>Exporter CSV</button>
+    <button id="clearBtn">Effacer</button>
+  </section>
+
+  <main>
+    <section class="grid" id="gauges"></section>
+    <section class="panel">
+      <h2>Console</h2>
+      <pre id="console"></pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
